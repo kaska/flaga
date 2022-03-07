@@ -12,9 +12,9 @@ def index():
 def xd():
     return render_template("xd.html")
 
-@app.route('/zajecia-programowania')
-def zajecia():
-    return 'ZPXD' #render_template("xd.html")
+@app.route('/flaga_dla_ukrainy')
+def flaga_dla_ukrainy():
+    return render_template("flaga_dla_ukrainy.html")
 
 
 if __name__=="__main__":
