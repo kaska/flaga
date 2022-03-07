@@ -12,9 +12,9 @@ def index():
 def xd():
     return render_template("xd.html")
 
-@app.route('/flaga_dla_ukrainy')
+@app.route('/flaga-dla-ukrainy')
 def flaga_dla_ukrainy():
-    return render_template("flaga_dla_ukrainy.html")
+    return render_template("flaga-dla-ukrainy.html")
 
 
 if __name__=="__main__":
