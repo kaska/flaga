@@ -21,7 +21,7 @@ def flaga_dla_ukrainy():
 @app.route('/brudnopis')
 def brudnopis():
     hero = character()
-    return render_template("brudnopis.html", hero = hero)
+    return render_template("brudnopis.html")
 
 if __name__=="__main__":
     app.run()
