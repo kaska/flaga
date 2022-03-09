@@ -1,6 +1,8 @@
 from flask import Flask, render_template
 import os
 
+from moje_programy.character_wiki import character
+
 app=Flask(__name__)
 
 @app.route('/')
@@ -18,7 +20,8 @@ def flaga_dla_ukrainy():
 
 @app.route('/brudnopis')
 def brudnopis():
-    return render_template("brudnopis.html")
+    hero = character()
+    return render_template("brudnopis.html", hero = hero)
 
 if __name__=="__main__":
     app.run()
