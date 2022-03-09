@@ -16,6 +16,9 @@ def xd():
 def flaga_dla_ukrainy():
     return render_template("flaga-dla-ukrainy.html")
 
+@app.route('/brudnopis')
+def brudnopis():
+    return render_template("brudnopis.html")
 
 if __name__=="__main__":
     app.run()
