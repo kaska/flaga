@@ -20,7 +20,7 @@ def flaga_dla_ukrainy():
 
 @app.route('/brudnopis')
 def brudnopis():
-    #hero = character()
+    hero = character()
     return render_template("brudnopis.html")
 
 if __name__=="__main__":

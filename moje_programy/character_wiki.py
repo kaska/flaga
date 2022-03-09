@@ -1,3 +1,3 @@
 
-def character ( name):
+def character ():
     return "Ija Kiwa"
