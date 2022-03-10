@@ -1,3 +1,4 @@
 
-def character ():
-    return "Ija Kiwa"
+def character ( name):
+    name = name.upper()
+    return name
