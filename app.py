@@ -1,7 +1,10 @@
 from flask import Flask, render_template
 import os
+import random
 
 from moje_programy.character_wiki import character
+from moje_programy.open_poem import open_poem
+
 
 app=Flask(__name__)
 
@@ -20,8 +23,15 @@ def flaga_dla_ukrainy():
 
 @app.route('/brudnopis')
 def brudnopis():
-    hero = character( "Ija Kiwa")
-    return render_template("brudnopis.html", hero=hero)
+    #hero = character( "Ija Kiwa")
+    #return render_template("brudnopis.html", hero=hero)
+    super_heroes = ['Tygrysek', 'Sowa', "Kangurzątko", 'Kłapouchy' ]
+    chosen_hero = random.choice( super_heroes)
+    super_hero = character( chosen_hero)
+
+    poem_lines = open_poem()
+
+    return render_template("brudnopis.html", hero=super_hero, super_heroes=super_heroes, poem_lines=poem_lines)
 
 if __name__=="__main__":
     app.run()
