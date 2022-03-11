@@ -9,5 +9,5 @@ def character ( name):
     content = wiki.summary(name, sentences=6)
     return content
 
-name = "Bruce Lee"
-print(character(name))
+#name = "Bruce Lee"
+#print(character(name))
