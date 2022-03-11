@@ -25,9 +25,9 @@ def flaga_dla_ukrainy():
 def brudnopis():
     #hero = character( "Ija Kiwa")
     #return render_template("brudnopis.html", hero=hero)
-    super_heroes = [ 'Bruce Lee', 'Kopernik' ]
+    super_heroes = [ 'Bruce Lee', 'Kopernik', 'Kubuś Puchatek' ]
     chosen_hero = random.choice( super_heroes)
-    super_hero = character( chosen_hero)
+    super_hero = character( chosen_hero).encode('ascii', 'ignore').decode('utf-8')
 
     poem_lines = open_poem()
 
