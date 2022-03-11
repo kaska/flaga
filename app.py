@@ -27,7 +27,7 @@ def brudnopis():
     #return render_template("brudnopis.html", hero=hero)
     super_heroes = [ 'Bruce Lee', 'Kopernik', 'Kubuś Puchatek' ]
     chosen_hero = random.choice( super_heroes)
-    super_hero = character( chosen_hero).encode('ascii', 'ignore').decode('utf-8')
+    super_hero = character( chosen_hero).encode('utf-8').decode()
 
     poem_lines = open_poem()
 
