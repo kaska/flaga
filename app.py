@@ -37,12 +37,12 @@ def ciekawe_postacie():
 
      characters_descriptions = []
      for i in range(3):
-         character=random.choice(characters_list)
-         index = characters_list.index(character)
+         hero=random.choice(characters_list)
+         index = characters_list.index(hero)
          characters_list.pop(index)
-         character_desc = character(character)
+         character_desc = hero(hero)
          words_num=len(character_desc.split())
-         info = [character, character_desc, words_num]
+         info = [hero, character_desc, words_num]
          characters_descriptions.append(info)
     
      characters_descriptions.sort(key = lambda x: x[2])
