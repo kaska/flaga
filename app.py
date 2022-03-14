@@ -18,17 +18,17 @@ def xd():
     return render_template("xd.html")
 
 @app.route('/it-trends')
-def xd():
+def it_trends():
     return render_template("it-trends.html")
 
 @app.route('/flaga-dla-ukrainy')
 def flaga_dla_ukrainy():
     return render_template("flaga-dla-ukrainy.html")
 
-# @app.route('/ciekawe-postacie')
-# def ciekawe_postacie():
-#     zmienna_python = 'abc'
-#     return render_template("ciekawe-postacie.html")#, zmienna_html=zmienna_python)
+@app.route('/ciekawe-postacie')
+def ciekawe_postacie():
+     zmienna_python = 'abc'
+     return render_template("ciekawe-postacie.html")#, zmienna_html=zmienna_python)
 
 @app.route('/brudnopis')
 def brudnopis():
