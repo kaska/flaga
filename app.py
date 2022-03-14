@@ -28,7 +28,12 @@ def flaga_dla_ukrainy():
 @app.route('/ciekawe-postacie')
 def ciekawe_postacie():
      zmienna_python = 'abc'
-     ciekawa_postac=character("Małysz")
+     lista_ciekawych_postaci = [
+         "Małysz",
+         "Kopernik"
+         "Woźniak"
+     ]
+     ciekawa_postac=character(random.choice(lista_ciekawych_postaci))
      return render_template("ciekawe-postacie.html", zmienna_html=zmienna_python, ciekawa_postac=ciekawa_postac)
 
 @app.route('/brudnopis')
