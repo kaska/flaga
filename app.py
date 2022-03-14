@@ -27,7 +27,7 @@ def flaga_dla_ukrainy():
 
 @app.route('/ciekawe-postacie')
 def ciekawe_postacie():
-     lista_ciekawych_postaci = [
+     characters_list = [
          "Małysz",
          "Kopernik",
          "Steve Wozniak",
@@ -35,17 +35,20 @@ def ciekawe_postacie():
          "Kościuszko"
      ]
 
-     opisy_postaci = []
+     characters_descriptions = []
      for i in range(3):
-         postac=random.choice(lista_ciekawych_postaci)
-         indeks = lista_ciekawych_postaci.index(postac)
-         lista_ciekawych_postaci.pop(indeks)
-         opis_postaci = character(postac)
-         info = [postac, opis_postaci]
-         opisy_postaci.append(info)
+         character=random.choice(characters_list)
+         index = characters_list.index(character)
+         characters_list.pop(index)
+         character_desc = character(character)
+         words_num=len(character_desc.split())
+         info = [character, character_desc, words_num]
+         characters_descriptions.append(info)
+    
+     characters_descriptions.sort(key = lambda x: x[1])
 
      #ciekawa_postac=character(random.choice(lista_ciekawych_postaci))
-     return render_template("ciekawe-postacie.html", opisy_postaci=opisy_postaci)
+     return render_template("ciekawe-postacie.html", characters_descriptions=characters_descriptions)
 
 @app.route('/brudnopis')
 def brudnopis():
