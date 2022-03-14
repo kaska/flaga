@@ -28,7 +28,7 @@ def flaga_dla_ukrainy():
 @app.route('/ciekawe-postacie')
 def ciekawe_postacie():
     zmienna_python = 'abc'
-    return render_template("ciekawe-postacie", zmienna_html=zmienna_python)
+    return render_template("ciekawe-postacie.html", zmienna_html=zmienna_python)
 
 @app.route('/brudnopis')
 def brudnopis():
