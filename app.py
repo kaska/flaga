@@ -41,7 +41,8 @@ def ciekawe_postacie():
          indeks = lista_ciekawych_postaci.index(postac)
          lista_ciekawych_postaci.pop(indeks)
          opis_postaci = character(postac)
-         opisy_postaci.append(opis_postaci)
+         info = [postac, opis_postaci]
+         opisy_postaci.append(info)
 
      #ciekawa_postac=character(random.choice(lista_ciekawych_postaci))
      return render_template("ciekawe-postacie.html", opisy_postaci=opisy_postaci)
