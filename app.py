@@ -30,8 +30,8 @@ def ciekawe_postacie():
      lista_ciekawych_postaci = [
          "Małysz",
          "Kopernik",
-         "Steve Wozniak"
-         "Maria Składowska"
+         "Steve Wozniak",
+         "Maria Składowska",
          "Kościuszko"
      ]
 
