@@ -30,10 +30,19 @@ def ciekawe_postacie():
      lista_ciekawych_postaci = [
          "Małysz",
          "Kopernik",
-         "Woźniak"
+         "Steve Wozniak"
+         "Maria Składowska"
+         "Kościuszko"
      ]
-     ciekawa_postac=character(random.choice(lista_ciekawych_postaci))
-     return render_template("ciekawe-postacie.html", ciekawa_postac=ciekawa_postac)
+
+     wylosowana_postac = []
+     for i in range(3):
+         postac=random.choice(lista_ciekawych_postaci)
+         opis_postaci = character(postac)
+         wylosowana_postac.append(opis_postaci)
+
+     #ciekawa_postac=character(random.choice(lista_ciekawych_postaci))
+     return render_template("ciekawe-postacie.html", ciekawa_postac=wylosowana_postac)
 
 @app.route('/brudnopis')
 def brudnopis():
