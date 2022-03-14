@@ -45,7 +45,7 @@ def ciekawe_postacie():
          info = [hero, character_desc, words_num]
          characters_descriptions.append(info)
     
-     characters_descriptions.sort(key = lambda x: x[2])
+     characters_descriptions.sort(key = lambda x: x[2], reverse=True)
 
      #ciekawa_postac=character(random.choice(lista_ciekawych_postaci))
      return render_template("ciekawe-postacie.html", characters_descriptions=characters_descriptions)
