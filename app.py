@@ -38,6 +38,8 @@ def ciekawe_postacie():
      opisy_postaci = []
      for i in range(3):
          postac=random.choice(lista_ciekawych_postaci)
+         indeks = lista_ciekawych_postaci.index(postac)
+         lista_ciekawych_postaci.pop(index)
          opis_postaci = character(postac)
          opisy_postaci.append(opis_postaci)
 
