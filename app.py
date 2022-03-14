@@ -31,7 +31,7 @@ def ciekawe_postacie():
          "Małysz",
          "Kopernik",
          "Steve Wozniak",
-         "Maria Składowska",
+         "Maria Skłodowska",
          "Kościuszko"
      ]
 
