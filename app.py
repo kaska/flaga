@@ -42,7 +42,7 @@ def ciekawe_postacie():
          opisy_postaci.append(opis_postaci)
 
      #ciekawa_postac=character(random.choice(lista_ciekawych_postaci))
-     return render_template("ciekawe-postacie.html", ciekawa_postac=opisy_postaci)
+     return render_template("ciekawe-postacie.html", opisy_postaci=opisy_postaci)
 
 @app.route('/brudnopis')
 def brudnopis():
