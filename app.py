@@ -40,7 +40,7 @@ def ciekawe_postacie():
          hero=random.choice(characters_list)
          index = characters_list.index(hero)
          characters_list.pop(index)
-         character_desc = hero(hero)
+         character_desc = character(hero)
          words_num=len(character_desc.split())
          info = [hero, character_desc, words_num]
          characters_descriptions.append(info)
